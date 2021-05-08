@@ -16,7 +16,7 @@ mkdir -p $VENDOR_DIR
 cd $VENDOR_DIR
 mkdir -p youtube-dl
 cd youtube-dl
-curl -L --silent $DOWNLOAD_URL
+curl -L --silent $DOWNLOAD_URL -o youtube-dl
 
 echo "exporting PATH" | indent
 PROFILE_PATH="$BUILD_DIR/.profile.d/youtube-dl.sh"
