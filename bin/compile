@@ -19,6 +19,7 @@ cd $VENDOR_DIR
 mkdir -p $BP_NAME
 cd $BP_NAME
 curl -L --silent $DOWNLOAD_URL -o $BP_NAME
+chmod a+x $BP_NAME
 
 echo "exporting PATH" | indent
 PROFILE_PATH="$BUILD_DIR/.profile.d/$BP_NAME.sh"
