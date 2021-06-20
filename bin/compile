@@ -26,4 +26,4 @@ PROFILE_PATH="$BUILD_DIR/.profile.d/$BP_NAME.sh"
 mkdir -p $(dirname $PROFILE_PATH)
 echo 'export PATH="$PATH:${HOME}/vendor/youtube-dl"' >> $PROFILE_PATH
 
-pip install -U youtube-dl
+youtube-dl --update
